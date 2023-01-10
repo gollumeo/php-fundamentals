@@ -103,24 +103,58 @@ echo "<br>6. 'The Girl Soccer Team' Exercise<br>";
     <label for="team_name">What's your name?</label>
     <input type="" name="team_name" required><br>
     <label for="team_age">How old are you?</label>
-    <input type="" name="team_age"><br>
+    <input type="number" name="team_age"><br>
     <label for="team_gender">Gender?</label>
     <input type="radio" name="team_gender" value="female" required><label for="female">Female</label>
     <input type="radio" name="team_gender" value="male" required><label for="male">Male</label><br>
     <input type="submit" name="submit" value="Apply to the team">
-
 </form>
 
 <?
 
-if (isset($GET_['team_name']) and isset($_GET['team_age']) and isset($_GET['team_gender'])) {
+if (isset($_GET['team_name']) and isset($_GET['team_age']) and isset($_GET['team_gender'])) {
     $name = $_GET['team_name'];
     $age = $_GET['team_age'];
     $gender = $_GET['team_gender'];
-    $alert = "Sorry, you don't fit the criteria.";
+    $able_to_play = false;
+    $alert = "Sorry, you don't fit the criteria.<br>";
 
-    if ($age >= 21 and $age <= 40 and $gender = "female") {
+    if ($age >= 21 and $age <= 40 and $gender == "female") {
         $able_to_play = true;
-        echo "coucou";
+    }
+
+    if ($able_to_play == true) {
+        $alert = "Welcome to the team, " . $name . "!<br>";
+    }
+
+    echo $alert;
+}
+
+echo "<br>'School sucks!' Exercise<br>";
+?>
+<br>
+<form action="" method="get">
+    <label for="grade">Boring grade:</label>
+    <input type="number" name="grade" required><br>
+    <input type="submit" name="submit" value="Rate that...">
+</form>
+
+<?
+
+if (isset($_GET['grade'])) {
+    $grade = $_GET['grade'];
+
+    if ($grade < 4) {
+        echo "<br>This work is really bad. What a dumb kid!";
+    } else if ($grade >= 5 AND $grade <= 9) {
+        echo "<br>This is not sufficient. More studying is required.";
+    } else if ($grade == 10) {
+        echo "<br>Barely enough!";
+    } else if ($grade > 10 AND $grade <= 14) {
+        echo "<br>Not bad!";
+    } else if ($grade > 14 AND $grade <= 18) {
+        echo "<br>Bravo, Bravissimo!";
+    } else if ($grade == 19 or $grade == 20) {
+        echo "<br>Too good to be true: confront the cheater!";
     }
 }
