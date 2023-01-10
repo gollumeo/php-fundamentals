@@ -23,7 +23,7 @@
     );
     ?>
 
-    <p>Hi! My name is <?php echo $name ?></p>
+    <p>Hi! My name is <? echo $name ?></p>
     <p>I'm <? echo $age ?> years old.</p>
     <p>My eyes are supposed to be <? echo $eyes ?>.</p>
     <p>The first person in my family is <? echo $family[0] ?>.</p>
