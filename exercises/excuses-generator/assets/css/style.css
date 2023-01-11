@@ -121,4 +121,8 @@ body .footer {
   margin-top: auto;
   font-style: italic;
   box-shadow: 0px 0px 20px 0px #000;
+}
+body #placeholder {
+  color: #ff9117;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -47,16 +47,17 @@
 
     <div class="excuses">
         <p>
-            <span id="placeholder">Your excuse will be displayed here.</span>
+            <span id="placeholder">Your excuse will be displayed below:</span>
 
             <script>
                 let form = document.getElementById("form");
                 form.addEventListener("submit", (event) => {
-                    event.preventDefault();
-                    document.getElementById("placeholder").style.display = "none";
+                    // event.preventDefault();
+                    document.getElementById("placeholder").remove();
                 })
                 </script>
                 <? include './assets/php/letters.php'; ?>
+
         </p>
 
     </div>
