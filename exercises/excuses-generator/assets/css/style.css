@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #242527;
+}
+body .header {
+  width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+  font-size: calc(1vh + 0.5vw);
+  margin-top: 25%;
+}/*# sourceMappingURL=style.css.map */

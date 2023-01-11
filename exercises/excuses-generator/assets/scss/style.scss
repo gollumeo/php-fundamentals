@@ -1,0 +1,34 @@
+$orange: #ff9117;
+$white: #fff;
+$metal_gray: #242527;
+$content_bg: #1b1b1b;
+$black: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: $metal_gray;
+
+  .header {
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: calc(1vh + 0.5vw);
+    margin-top: 25%;
+  }
+
+//   .form {
+//     // // width: 30%;
+//     // // display: flex;
+//     // flex-direction: column;
+//     // justify-content: center;
+//     // background-color: red;
+
+//   }
+}
