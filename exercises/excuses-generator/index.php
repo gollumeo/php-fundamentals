@@ -21,7 +21,7 @@
     </div>
 
     <div class="form">
-        <form action="./assets/php/letters.php" method="get">
+        <form action="" method="get" id="form">
             <label for="child_name">Child's name:</label>
             <input type="text" placeholder="Your child's name" name="child_name" required><br>
             <label for="child_gender">Child's gender:</label>
@@ -40,23 +40,23 @@
             <input type="submit" value="Generate apology" id="submit">
 
         </form>
+        <form action="index.php"><input type="submit" value="Cancel" id="reload"></form>
     </div>
 
 
 
     <div class="excuses">
         <p>
-            <? include './assets/php/letters.php';
-            echo $illness[0]; ?>
+            <span id="placeholder">Your excuse will be displayed here.</span>
 
-
-            <span class="date">Wednesday, the 11th of January</span>Dear Teacher,<br><br>
-            I am writing to inform you that Tête de mort will be absent from school for the next few days due to illness. Tête de mort has been diagnosed with the flu and must undergo medical treatment to recover.<br>
-            We understand that this absence may impact Tête de mort's studies and class participation, and we will do our best to minimize disruptions. We commit to providing all necessary information for Tête de mort to catch up on missed classes.<br>
-            We apologize for any inconvenience caused and thank you for your understanding in these difficult circumstances.<br><br>
-
-            Sincerely,<br>
-            His father
+            <script>
+                let form = document.getElementById("form");
+                form.addEventListener("submit", (event) => {
+                    event.preventDefault();
+                    document.getElementById("placeholder").style.display = "none";
+                })
+                </script>
+                <? include './assets/php/letters.php'; ?>
         </p>
 
     </div>

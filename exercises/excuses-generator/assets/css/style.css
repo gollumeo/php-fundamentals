@@ -69,7 +69,7 @@ body .excuses select {
   align-items: center;
   border-color: #ff9117;
 }
-body .form #submit, body .excuses #submit {
+body .form #submit, body .excuses #submit, body .form #reload, body .excuses #reload {
   justify-self: center;
   align-self: center;
   width: auto;
@@ -85,8 +85,10 @@ body .form #submit, body .excuses #submit {
   box-shadow: inset 0px 0px 4px #1b1b1b, 0 0px 8px rgba(0, 0, 0, 0.4);
   transition: all ease-in-out 0.5s;
   letter-spacing: 0.5px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-body .form #submit:hover, body .excuses #submit:hover {
+body .form #submit:hover, body .excuses #submit:hover, body .form #reload:hover, body .excuses #reload:hover {
   background-color: #ff9117;
   color: #242527;
   transform: scale(1.05);

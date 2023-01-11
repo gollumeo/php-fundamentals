@@ -81,7 +81,7 @@ body {
       border-color: $orange;
     }
 
-    #submit {
+    #submit, #reload {
       justify-self: center;
       align-self: center;
       width: auto;
@@ -97,6 +97,8 @@ body {
       box-shadow: inset 0px 0px 4px $content_bg, 0 0px 8px rgba(0, 0, 0, 0.4);
       transition: all ease-in-out 0.5s;
       letter-spacing: 0.5px;
+      margin-left: 5%;
+      margin-right: 5%;
 
       &:hover {
         background-color: $orange;
