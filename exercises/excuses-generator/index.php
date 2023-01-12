@@ -44,7 +44,6 @@
     </div>
 
 
-
     <div class="excuses">
         <p>
             <span id="placeholder">Your excuse will be displayed below:</span>
